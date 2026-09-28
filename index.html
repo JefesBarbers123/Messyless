@@ -9,11 +9,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@400;500&family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/messyless-logo.png">
 </head>
 <body>
   <div class="grain"></div>
   <header class="nav">
-    <a class="brand" href="#top" aria-label="Messyless home">MESSYLESS<span>®</span></a>
+    <a class="brand" href="#top" aria-label="Messyless home">
+      <img src="assets/messyless-wordmark.png" alt="Messyless">
+    </a>
     <nav>
       <a href="#menu">MENU</a>
       <a href="#why">WHY</a>
@@ -26,7 +29,11 @@
     <section class="hero section-pad">
       <div class="hero-copy">
         <p class="eyebrow">THE BURGER THAT KEEPS IT TOGETHER</p>
-        <h1>FULL<br><span>INDULGENCE.</span><br>LESS MESS.</h1>
+        <h1>
+          FULL
+          <img class="indulgence" src="assets/title-indulgence.png" alt="Indulgence">
+          LESS MESS.
+        </h1>
         <p class="hero-lede">We took everything you love about a burger and put it where it belongs — inside a crispy, sealed shell. More sauce. More flavour. More burger in every mouthful.</p>
         <div class="hero-actions">
           <a class="button button-dark" href="#menu">SEE THE MENU <span>↘</span></a>
@@ -35,14 +42,19 @@
         <div class="scribble-note">NO DRIPS.<br>NO WIPE.<br>NO SAD<br>MOUTHFUL.</div>
       </div>
       <div class="hero-art">
-        <div class="burst">BURGER<br>REDESIGNED</div>
-        <img src="messyless-character.jpg" alt="Original hand-drawn Messyless character">
-        <div class="sticker">MESSY<br>LESS</div>
+        <img class="burst-img" src="assets/sticker-burger-redesigned.png" alt="Burger redesigned">
+        <img src="assets/messyless-character.png" alt="Messyless character — a happy orange burger with hands on hips">
+        <img class="sticker-img" src="assets/sticker-mess-less.png" alt="Mess less">
       </div>
     </section>
 
-    <section class="ticker" aria-label="Messyless statement">
-      <div>SAUCE INSIDE ★ FLAVOUR EVERYWHERE ★ LESS WASTE ★ BIGGER MOUTHFUL ★ SAUCE INSIDE ★ FLAVOUR EVERYWHERE ★</div>
+    <section class="ticker" aria-label="Sauce inside, no mess, full flavour">
+      <div class="ticker-track">
+        <img src="assets/ticker-strip.png" alt="">
+        <img src="assets/ticker-strip.png" alt="">
+        <img src="assets/ticker-strip.png" alt="">
+        <img src="assets/ticker-strip.png" alt="">
+      </div>
     </section>
 
     <section id="menu" class="menu section-pad">
@@ -58,22 +70,31 @@
         <article class="menu-card featured">
           <div class="menu-num">01</div>
           <div class="sauce-tags"><span>RICH</span><span>SHARP</span></div>
-          <h3>THE ORIGINAL</h3>
+          <h3>
+            <img class="flavour-wide" src="assets/title-original.png" alt="The Original">
+            <img class="flavour-stack" src="assets/title-original-stack.png" alt="">
+          </h3>
           <p>Smoked burger sauce + pickled jalapeño relish. Two smashed beef patties, American cheese and a crackly pizza-dough shell.</p>
           <div class="card-foot"><span>THE CLASSIC PAIRING</span><span>£ —</span></div>
         </article>
         <article class="menu-card">
           <div class="menu-num">02</div>
           <div class="sauce-tags"><span>CREAMY</span><span>HOT</span></div>
-          <h3>THE FIRE</h3>
+          <h3>
+            <img class="flavour-wide" src="assets/title-fire.png" alt="The Fire">
+            <img class="flavour-stack" src="assets/title-fire-stack.png" alt="">
+          </h3>
           <p>Garlic parmesan mayo + hot honey chilli jam. Rich, sweet, spicy and built to stay inside the burger.</p>
           <div class="card-foot"><span>THE LOUD ONE</span><span>£ —</span></div>
         </article>
         <article class="menu-card lime-card">
           <div class="menu-num">03</div>
           <div class="sauce-tags"><span>TRUFFLE</span><span>MUSTARD</span></div>
-          <h3>THE DEEP CUT</h3>
-          <p>Truffle mayo + caramelised onion & mustard. A deeper, savoury pairing with a little sweetness.</p>
+          <h3>
+            <img class="flavour-wide" src="assets/title-deep-cut.png" alt="The Deep Cut">
+            <img class="flavour-stack" src="assets/title-deep-cut-stack.png" alt="">
+          </h3>
+          <p>Truffle mayo + caramelised onion &amp; mustard. A deeper, savoury pairing with a little sweetness.</p>
           <div class="card-foot"><span>THE DEEP ONE</span><span>£ —</span></div>
         </article>
       </div>
@@ -92,9 +113,12 @@
           <p>Get on the Messyless list before launch and we'll send you a code for <strong>50% OFF FRIES</strong> when the doors open.</p>
           <a class="button button-lime" href="#join">I WANT THE FRIES <span>↘</span></a>
         </div>
-        <div class="deal-doodle" aria-hidden="true">
-          <span>50%</span>
-          <small>FRIES<br>OFF</small>
+        <div class="deal-visual">
+          <img src="assets/messyless-character.png" alt="" aria-hidden="true">
+          <div class="deal-doodle">
+            <span>50%</span>
+            <small>FRIES<br>OFF</small>
+          </div>
         </div>
       </div>
     </section>
@@ -109,7 +133,9 @@
       </div>
 
       <div class="why-grid">
-        <div class="why-image"><img src="messyless-logo.jpg" alt="Original hand-drawn Messyless Burger logo"></div>
+        <div class="why-image">
+          <img src="assets/messyless-logo.png" alt="ML Burgers hand-drawn logo">
+        </div>
         <div class="steps">
           <div class="step"><span>01</span><h3>SEAL IT.</h3><p>The burger is built inside a pizza-style dough round and sealed with a 12cm cutter.</p></div>
           <div class="step"><span>02</span><h3>KEEP THE GOOD STUFF IN.</h3><p>Two sauces are set as pucks and sit inside the build, protected by cheese layers.</p></div>
@@ -132,7 +158,7 @@
           <p class="micro">Payment button is ready to connect to your Stripe Payment Link.</p>
         </div>
         <div class="book-cover">
-          <div class="cover-logo">ML</div>
+          <img class="cover-mark" src="assets/messyless-wordmark.png" alt="">
           <div class="cover-title">HOW WE<br>BUILT<br>MESSYLESS</div>
           <div class="cover-bottom">A VERY SMALL BOOK<br>ABOUT A VERY MESSY IDEA.</div>
         </div>
@@ -161,8 +187,8 @@
     </section>
 
     <section class="final section-pad">
-      <div class="final-mark">MESSYLESS</div>
-      <img src="messyless-character.jpg" alt="Messyless character" class="final-character">
+      <img class="final-wordmark" src="assets/messyless-wordmark.png" alt="Messyless">
+      <img src="assets/messyless-character.png" alt="Messyless character" class="final-character">
       <p>BUILT TO BE EATEN.<br>DESIGNED TO BE LESS MESS.</p>
       <a href="#top" class="back-top">BACK TO TOP ↑</a>
     </section>
@@ -170,6 +196,7 @@
 
   <footer>
     <span>© 2026 MESSYLESS</span>
+    <img class="footer-logo" src="assets/messyless-logo.png" alt="ML Burgers">
     <span>BURGERS / IDEAS / LESS MESS</span>
     <span>INSTAGRAM — @YOURHANDLE</span>
   </footer>
